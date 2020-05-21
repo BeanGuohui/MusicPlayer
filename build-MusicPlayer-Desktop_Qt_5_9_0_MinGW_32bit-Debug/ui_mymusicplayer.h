@@ -17,6 +17,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -30,13 +31,15 @@ public:
     QPushButton *psAddfile;
     QPushButton *pbPrev;
     QPushButton *psNext;
+    QPushButton *psVolume;
+    QTableView *infoSong;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MyMusicPlayer)
     {
         if (MyMusicPlayer->objectName().isEmpty())
             MyMusicPlayer->setObjectName(QStringLiteral("MyMusicPlayer"));
-        MyMusicPlayer->resize(937, 491);
+        MyMusicPlayer->resize(957, 536);
         MyMusicPlayer->setStyleSheet(QLatin1String("#centralWidget{\n"
 "border-image: url(:/img/backimg.jpg);\n"
 "}"));
@@ -68,6 +71,16 @@ public:
         psNext->setMinimumSize(QSize(50, 50));
         psNext->setMaximumSize(QSize(50, 50));
         psNext->setStyleSheet(QStringLiteral("border-image: url(:/img/next.png);"));
+        psVolume = new QPushButton(centralWidget);
+        psVolume->setObjectName(QStringLiteral("psVolume"));
+        psVolume->setGeometry(QRect(700, 400, 50, 50));
+        psVolume->setMinimumSize(QSize(50, 50));
+        psVolume->setMaximumSize(QSize(50, 50));
+        psVolume->setStyleSheet(QStringLiteral("border-image: url(:/img/soundsize.png);"));
+        infoSong = new QTableView(centralWidget);
+        infoSong->setObjectName(QStringLiteral("infoSong"));
+        infoSong->setGeometry(QRect(130, 50, 631, 331));
+        infoSong->setStyleSheet(QStringLiteral("background-color: rgb(0, 0, 0, 0);"));
         MyMusicPlayer->setCentralWidget(centralWidget);
         statusBar = new QStatusBar(MyMusicPlayer);
         statusBar->setObjectName(QStringLiteral("statusBar"));
@@ -86,6 +99,7 @@ public:
         psAddfile->setText(QString());
         pbPrev->setText(QString());
         psNext->setText(QString());
+        psVolume->setText(QString());
     } // retranslateUi
 
 };
