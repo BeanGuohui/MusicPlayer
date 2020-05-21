@@ -100,25 +100,18 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_myicon.cpp
 release/qrc_myicon.cpp: ../MusicPlayer/myicon.qrc \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/bin/rcc.exe \
-		../MusicPlayer/img/mute.png \
-		../MusicPlayer/img/refresh.png \
-		../MusicPlayer/img/random.png \
-		../MusicPlayer/img/pause.png \
-		../MusicPlayer/img/prev.png \
-		../MusicPlayer/img/close.png \
-		../MusicPlayer/img/play.png \
-		../MusicPlayer/img/delete.png \
-		../MusicPlayer/img/collection.png \
 		../MusicPlayer/img/musiclist.png \
-		../MusicPlayer/img/icon.png \
-		../MusicPlayer/img/settings.png \
-		../MusicPlayer/img/soundsize.png \
-		../MusicPlayer/img/down.png \
-		../MusicPlayer/img/loop.png \
-		../MusicPlayer/img/singleloop.png \
+		../MusicPlayer/img/mute.png \
+		../MusicPlayer/img/play.png \
+		../MusicPlayer/img/random.png \
+		../MusicPlayer/img/file.png \
+		../MusicPlayer/img/backimg.jpg \
 		../MusicPlayer/img/next.png \
-		../MusicPlayer/img/search.png \
-		../MusicPlayer/img/favoriteslist.png
+		../MusicPlayer/img/singleloop.png \
+		../MusicPlayer/img/soundsize.png \
+		../MusicPlayer/img/loop.png \
+		../MusicPlayer/img/pause.png \
+		../MusicPlayer/img/prev.png
 	C:\Qt\Qt5.9.0\5.9\mingw53_32\bin\rcc.exe -name myicon ..\MusicPlayer\myicon.qrc -o release\qrc_myicon.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
@@ -572,16 +565,20 @@ release/mymusicplayer.o: ../MusicPlayer/mymusicplayer.cpp ../MusicPlayer/mymusic
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qstyle.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QMenuBar \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qmenubar.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qmenu.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QStatusBar \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QToolBar \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qtoolbar.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QTextCodec \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qtextcodec.h
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qtextcodec.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QFile \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QFileDialog \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qfiledialog.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qdir.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qfileinfo.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mymusicplayer.o ..\MusicPlayer\mymusicplayer.cpp
 
 release/qrc_myicon.o: release/qrc_myicon.cpp 

@@ -1,11 +1,7 @@
 <RCC>
     <qresource prefix="/">
-        <file>img/close.png</file>
-        <file>img/collection.png</file>
-        <file>img/delete.png</file>
-        <file>img/down.png</file>
-        <file>img/favoriteslist.png</file>
-        <file>img/icon.png</file>
+        <file>img/backimg.jpg</file>
+        <file>img/file.png</file>
         <file>img/loop.png</file>
         <file>img/musiclist.png</file>
         <file>img/mute.png</file>
@@ -14,9 +10,6 @@
         <file>img/play.png</file>
         <file>img/prev.png</file>
         <file>img/random.png</file>
-        <file>img/refresh.png</file>
-        <file>img/search.png</file>
-        <file>img/settings.png</file>
         <file>img/singleloop.png</file>
         <file>img/soundsize.png</file>
     </qresource>

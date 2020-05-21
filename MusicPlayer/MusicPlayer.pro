@@ -35,3 +35,4 @@ FORMS += \
 
 RESOURCES += \
     myicon.qrc
+
