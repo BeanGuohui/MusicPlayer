@@ -13,11 +13,13 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSlider>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QTableView>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -32,14 +34,18 @@ public:
     QPushButton *pbPrev;
     QPushButton *psNext;
     QPushButton *psVolume;
-    QTableView *infoSong;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout;
+    QTableWidget *infoSong;
+    QPushButton *psPlayType;
+    QSlider *slProcess;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MyMusicPlayer)
     {
         if (MyMusicPlayer->objectName().isEmpty())
             MyMusicPlayer->setObjectName(QStringLiteral("MyMusicPlayer"));
-        MyMusicPlayer->resize(957, 536);
+        MyMusicPlayer->resize(888, 519);
         MyMusicPlayer->setStyleSheet(QLatin1String("#centralWidget{\n"
 "border-image: url(:/img/backimg.jpg);\n"
 "}"));
@@ -77,10 +83,30 @@ public:
         psVolume->setMinimumSize(QSize(50, 50));
         psVolume->setMaximumSize(QSize(50, 50));
         psVolume->setStyleSheet(QStringLiteral("border-image: url(:/img/soundsize.png);"));
-        infoSong = new QTableView(centralWidget);
+        widget = new QWidget(centralWidget);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(160, 70, 641, 281));
+        horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setSpacing(6);
+        horizontalLayout->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        infoSong = new QTableWidget(widget);
         infoSong->setObjectName(QStringLiteral("infoSong"));
-        infoSong->setGeometry(QRect(130, 50, 631, 331));
         infoSong->setStyleSheet(QStringLiteral("background-color: rgb(0, 0, 0, 0);"));
+
+        horizontalLayout->addWidget(infoSong);
+
+        psPlayType = new QPushButton(centralWidget);
+        psPlayType->setObjectName(QStringLiteral("psPlayType"));
+        psPlayType->setGeometry(QRect(40, 300, 50, 50));
+        psPlayType->setMinimumSize(QSize(50, 50));
+        psPlayType->setMaximumSize(QSize(50, 50));
+        psPlayType->setStyleSheet(QStringLiteral("border-image: url(:/img/loop.png);"));
+        slProcess = new QSlider(centralWidget);
+        slProcess->setObjectName(QStringLiteral("slProcess"));
+        slProcess->setGeometry(QRect(89, 360, 761, 22));
+        slProcess->setMaximum(100);
+        slProcess->setOrientation(Qt::Horizontal);
         MyMusicPlayer->setCentralWidget(centralWidget);
         statusBar = new QStatusBar(MyMusicPlayer);
         statusBar->setObjectName(QStringLiteral("statusBar"));
@@ -100,6 +126,7 @@ public:
         pbPrev->setText(QString());
         psNext->setText(QString());
         psVolume->setText(QString());
+        psPlayType->setText(QString());
     } // retranslateUi
 
 };

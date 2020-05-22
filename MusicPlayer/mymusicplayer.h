@@ -7,6 +7,8 @@
 #include <QtSql/QSqlQuery>
 #include <Qtsql/QSqlError>
 #include <QVariantList>
+#include <QCoreApplication>
+
 namespace Ui {
 class MyMusicPlayer;
 }
@@ -18,12 +20,17 @@ class MyMusicPlayer : public QMainWindow
 public:
     explicit MyMusicPlayer(QWidget *parent = 0);
     ~MyMusicPlayer();
+    void showSongs();
 public slots:
     void pauseStart();
     void addFile();
     void prevSong();
     void nextSong();
     void isVolume();
+    void changePlayType();
+    void sliderChange(int);
+    void changeSliderProcess(qint64);
+    void setSliderMaxnumber(qint64);
 
 private:
     Ui::MyMusicPlayer *ui;
@@ -46,6 +53,8 @@ private:
     QString albumTitle;
     //比特率
     int audioBitRate;
+
+    QSqlDatabase db;
 
 };
 

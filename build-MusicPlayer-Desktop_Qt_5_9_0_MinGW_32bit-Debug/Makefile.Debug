@@ -255,6 +255,10 @@ debug/moc_mymusicplayer.cpp: C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtMultimedia/Q
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtSql/qsqlquery.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/Qtsql/QSqlError \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/Qtsql/qsqlerror.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QVariantList \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QCoreApplication \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		../MusicPlayer/mymusicplayer.h \
 		debug/moc_predefs.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/bin/moc.exe
@@ -414,10 +418,12 @@ debug/main.o: ../MusicPlayer/main.cpp ../MusicPlayer/mymusicplayer.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtSql/qsqlquery.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/Qtsql/QSqlError \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/Qtsql/qsqlerror.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QVariantList \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QCoreApplication \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qapplication.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtGui/qinputmethod.h
@@ -556,21 +562,29 @@ debug/mymusicplayer.o: ../MusicPlayer/mymusicplayer.cpp ../MusicPlayer/mymusicpl
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtSql/qsqlquery.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/Qtsql/QSqlError \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/Qtsql/qsqlerror.h \
-		ui_mymusicplayer.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QAction \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qaction.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qactiongroup.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QVariantList \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QCoreApplication \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QButtonGroup \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qbuttongroup.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QHeaderView \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qheaderview.h \
+		ui_mymusicplayer.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QTextCodec \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qtextcodec.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QFile \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QFileDialog \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qfiledialog.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qdir.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qfileinfo.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QStringList \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QSlider \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qslider.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qabstractslider.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QTableWidget \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qtablewidget.h \
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qtableview.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qabstractitemview.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qframe.h \
@@ -581,27 +595,10 @@ debug/mymusicplayer.o: ../MusicPlayer/mymusicplayer.cpp ../MusicPlayer/mymusicpl
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qabstractspinbox.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtGui/qvalidator.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qregularexpression.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qslider.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qabstractslider.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qstyle.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QWidget \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QTextCodec \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qtextcodec.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QFile \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QMessageBox \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qmessagebox.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qdialog.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/QFileDialog \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets/qfiledialog.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qdir.h \
-		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qfileinfo.h
+		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QFileInfo
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mymusicplayer.o ..\MusicPlayer\mymusicplayer.cpp
 
 debug/qrc_myicon.o: debug/qrc_myicon.cpp 
