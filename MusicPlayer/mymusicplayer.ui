@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>888</width>
-    <height>519</height>
+    <width>956</width>
+    <height>557</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,209 +19,241 @@ border-image: url(:/img/backimg.jpg);
 }</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="psPuse">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>390</y>
-      <width>50</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>50</width>
-      <height>50</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>50</width>
-      <height>50</height>
-     </size>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/img/play.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="psAddfile">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>390</y>
-      <width>50</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>50</width>
-      <height>50</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>50</width>
-      <height>50</height>
-     </size>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/img/file.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pbPrev">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>390</y>
-      <width>50</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>50</width>
-      <height>50</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>50</width>
-      <height>50</height>
-     </size>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/img/prev.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="psNext">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>390</y>
-      <width>50</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>50</width>
-      <height>50</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>50</width>
-      <height>50</height>
-     </size>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/img/next.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="psVolume">
-    <property name="geometry">
-     <rect>
-      <x>700</x>
-      <y>400</y>
-      <width>50</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>50</width>
-      <height>50</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>50</width>
-      <height>50</height>
-     </size>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/img/soundsize.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>70</y>
-      <width>641</width>
-      <height>281</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QTableWidget" name="infoSong">
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0, 0);</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QPushButton" name="psPlayType">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>300</y>
-      <width>50</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>50</width>
-      <height>50</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>50</width>
-      <height>50</height>
-     </size>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/img/loop.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QSlider" name="slProcess">
-    <property name="geometry">
-     <rect>
-      <x>89</x>
-      <y>360</y>
-      <width>761</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QWidget" name="widget_5" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="showNowSong">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="infoSong">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0, 0);</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QSlider" name="slProcess">
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_4" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="lanow">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lbding">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="psAddfile">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/img/file.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="psPlayType">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/img/loop.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbPrev">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/img/prev.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="psPuse">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/img/play.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="psNext">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/img/next.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="psVolume">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/img/soundsize.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionaddFile">
